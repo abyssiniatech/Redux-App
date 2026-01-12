@@ -1,9 +1,9 @@
-import Usecontext from "./components/Usecontext";
+import Increment from "./components/Increment";
 
 const App = () => {
   return (
     <div>
-      <Usecontext />
+     <Increment />
     </div>
   )
 };
