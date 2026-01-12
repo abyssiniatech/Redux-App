@@ -1,10 +1,13 @@
-import Usestate from "./components/Usestate";
+import FetchData from "./components/FetchData";
+import UseEffect from "./components/UseEffect";
 
 
 const App = () => {
   return (
     <div>
-      <Usestate />
+      <UseEffect />
+      <hr />
+      <FetchData />
     </div>
   )
 };

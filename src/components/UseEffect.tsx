@@ -1,53 +1,39 @@
-// import {Usestate,useEffect} from "react"
-
-import { useEffect, useState } from "react";
-
-
-
-// const UseEffect = () => {
-//     const [car,setcar] useState({
-//         name:"",
-//         year:2025,
-//         color:"red"
-//     })
-//     useEffect(() => {
-//          setTimeout(() =>{
-//            setcar((e:React.ReactEventHandler<InputEvent>)=>(e.target.value))
-//          },2000)
-//       return () => {
-        
-//       };
-//     }, [])
-//   return (
-//     <div>
-//         <header>
-//             <h2>{car.name}</h2>
-//             <h2>{car.year}</h2>
-//             <h2>{car.color}</h2>
-//         </header>
-//     <label htmlFor="car">Car</label>
-//     <input onChange={handleinput} type="text" value={car.name} />
-//     <input onChange={handleinput} type="number" value={car.year} />
-//     <input onChange={handleinput} type="text" value={car.color} />
-//     </div>
-//   )
-// };
-
-// export default UseEffect;
-
-
-
+import { useEffect,useState } from "react";
+type Post = {
+  id: number;
+  title: string;
+  body: string;
+};
+const Url="https://jsonplaceholder.typicode.com/posts"
 const UseEffect = () => {
-  const [count,setCount] =useState(0)
-   const inc=()=>{
-    setCount(count+1)
-   }
-  useEffect(()=>{
-    document.title = `${count} times rendered`
-  },[])
+  const [data,setdata] =useState<Post[]>([])
+   useEffect(()=>{
+      const Fetchdata = async() =>{
+         const res=await fetch(Url)
+         const data=await res.json()
+        setdata(data)
+      }
+
+    
+      Fetchdata()
+    },[])
   return (
     <div>
-       <button onClick={inc}>Increment</button>
+        {
+           data.map((list)=>{
+            return(
+              <div key={list.id}>
+                <ul className="bg-gray-100 border border-gray-400 p-4 m-2 ">
+
+                <li>{list.id}</li>
+                <li>{list.title}</li>
+                <li>{list.body}</li>
+                </ul>
+              </div>
+            )
+           })
+
+        }
     </div>
   )
 };
