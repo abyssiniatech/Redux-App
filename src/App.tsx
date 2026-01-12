@@ -1,13 +1,9 @@
-import FetchData from "./components/FetchData";
-import UseEffect from "./components/UseEffect";
-
+import Usecontext from "./components/Usecontext";
 
 const App = () => {
   return (
     <div>
-      <UseEffect />
-      <hr />
-      <FetchData />
+      <Usecontext />
     </div>
   )
 };

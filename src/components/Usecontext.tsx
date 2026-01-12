@@ -1,21 +1,22 @@
 import { createContext, useState } from "react";
-import ContextA from "./Context";
-import ContextB from "./ContextB";
+import UserProfile from "./Context";
 
-
-
-export const user= createContext <React.Context<null>>(null)
-
-const Usecontext = () => {
-  const [name,setname] = useState("surafel")
-  return (
-    <div>
-   <user.Provider value={name}>
-     <ContextA />
-     <ContextB />
-   </user.Provider>
-    </div>
-  )
+type UserContextType = {
+  name: string;
+  setName: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export default Usecontext;
+// eslint-disable-next-line react-refresh/only-export-components
+export const UserContext = createContext<UserContextType | null>(null);
+
+const UserProvider = () => {
+  const [name, setName] = useState("surafel");
+
+  return (
+    <UserContext.Provider value={{ name, setName }}>
+      <UserProfile />
+    </UserContext.Provider>
+  );
+};
+
+export default UserProvider;
