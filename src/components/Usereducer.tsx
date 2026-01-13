@@ -5,7 +5,7 @@ import { useReducer } from "react";
 const initialState = 0;
 
 // 2️⃣ Reducer Function
-function reducer(state, action) {
+function reducer(state:number, action: { type: string; }) {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
