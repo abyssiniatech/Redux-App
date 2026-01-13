@@ -16,7 +16,7 @@ const Useref = () => {
       <input type="text"
        id="input"
       ref={inputref} 
-      className="px-4 py-2 bg-indigo-400 text-white"
+      className="px-4 py-2 bg-indigo-400 text-gray-800"
       />
       <button
         className="bg-blue-400 text-white m-2 rounded px-4 py-2"

@@ -1,9 +1,10 @@
-import Useref from "./components/Useref";
+import Usereducer from "./components/Usereducer";
+
 
 const App = () => {
   return (
     <div>
-      <Useref />
+      <Usereducer />
     </div>
   )
 };
