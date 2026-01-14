@@ -1,10 +1,10 @@
-import Usereducer from "./components/Usereducer";
+import CounterRef from "./components/CounterRef";
 
 
 const App = () => {
   return (
     <div>
-      <Usereducer />
+      <CounterRef />
     </div>
   )
 };
