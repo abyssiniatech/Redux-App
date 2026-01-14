@@ -1,10 +1,10 @@
-import Reducer from "./components/Reducer";
+import UseContextIncrement from "./components/UseContextIncrement";
 
 
 const App = () => {
   return (
     <div>
-      <Reducer />
+    <UseContextIncrement />
     </div>
   )
 };
