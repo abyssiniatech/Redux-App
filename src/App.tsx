@@ -1,9 +1,16 @@
-import Increment from "./app/Increment"
+import Surafel from "./reactcore/Surafel"
+
 
 const App = () => {
   return (
     <div>
-      <Increment />
+      <Surafel 
+      name="surafel"  
+      age={23}
+      email="surafel@gmail.com"
+
+      
+      />
     </div>
   )
 }
