@@ -1,7 +1,12 @@
 import Surafel from "./reactcore/Surafel"
 import AdvanceProp from "./AdvanceProp"
-
-const App = () => {
+import Counter from "./reactcore/Counter"
+import { counterProp } from "./reactcore/Counter"
+const App = (props:counterProp) => {
+   const [count,setCount] = useState<number>(0);
+    const handleInc =()=>{
+        setCount(prev=>prev+1)
+    }
   return (
     <div>
       <Surafel 
@@ -14,6 +19,9 @@ const App = () => {
            name="abel"
            department="computer science"
         />}
+        count={
+          <Counter />
+        } 
       />
      
     </div>
