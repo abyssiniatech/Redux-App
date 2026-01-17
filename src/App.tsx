@@ -1,9 +1,9 @@
-import UseRef from "./reactcore/UseRef"
+import CounterRef from "./reactcore/CounterRef"
 
 const App = () => {
   return (
     <div>
-       <UseRef />
+       <CounterRef />
     </div>
   )
 }
