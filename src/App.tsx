@@ -1,9 +1,9 @@
-import ColorChanger from "./components/Project/Bgcolor"
+import RandomBgColor from "./components/Project/Daynamicbgcolor"
 
 const App = () => {
   return (
     <div>
-      <ColorChanger />
+      <RandomBgColor />
     </div>
   )
 }
