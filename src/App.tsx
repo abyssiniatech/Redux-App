@@ -1,9 +1,9 @@
-import Reducer from "./reactcore/Reducer"
+import { IncrementContext } from "./reactcore/IncrementContext"
 
 const App = () => {
   return (
     <div>
-      <Reducer />
+      <IncrementContext  />
     </div>
   )
 }
