@@ -1,9 +1,9 @@
-import Todo from "./reactcore/Todo"
+import ColorChanger from "./components/Project/Bgcolor"
 
 const App = () => {
   return (
     <div>
-      <Todo />
+      <ColorChanger />
     </div>
   )
 }
