@@ -1,9 +1,9 @@
-import { IncrementContext } from "./reactcore/IncrementContext"
+import Todo from "./reactcore/Todo"
 
 const App = () => {
   return (
     <div>
-      <IncrementContext  />
+      <Todo />
     </div>
   )
 }
