@@ -5,10 +5,11 @@ type main={
     body:string
 }
 
-
+const tit="surafel"
 const UseEffect = () => {
     const [data,setData] = useState<main[]>([])
       useEffect(() =>{
+        document.title =`welcome ${tit}`
         setTimeout(() =>{
             const Featchdata=async()=>{
                 const res= await fetch("https://jsonplaceholder.typicode.com/posts");

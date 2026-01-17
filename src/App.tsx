@@ -1,9 +1,9 @@
-import UseEffect from "./reactcore/UseEffect"
+import UseRef from "./reactcore/UseRef"
 
 const App = () => {
   return (
     <div>
-       <UseEffect />
+       <UseRef />
     </div>
   )
 }
