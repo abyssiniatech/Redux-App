@@ -1,9 +1,9 @@
-import UseContext from "./components/undamentals/UseContext"
+import Reducer from "./reactcore/Reducer"
 
 const App = () => {
   return (
     <div>
-      <UseContext />
+      <Reducer />
     </div>
   )
 }
