@@ -1,9 +1,9 @@
-import CounterRef from "./reactcore/CounterRef"
+import UseContext from "./components/undamentals/UseContext"
 
 const App = () => {
   return (
     <div>
-       <CounterRef />
+      <UseContext />
     </div>
   )
 }
