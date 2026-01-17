@@ -15,7 +15,7 @@ const RandomBgColor = () => {
         onClick={handleClick}
         className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800"
       >
-        Change Bg Color
+        Change Bg Colors
       </button>
     </div>
   )
