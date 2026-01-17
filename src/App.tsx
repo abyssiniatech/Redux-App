@@ -1,9 +1,9 @@
-import Object from "./reactcore/Object"
+import UseEffect from "./reactcore/UseEffect"
 
 const App = () => {
   return (
     <div>
-       <Object />
+       <UseEffect />
     </div>
   )
 }
